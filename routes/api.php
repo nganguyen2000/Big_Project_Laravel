@@ -24,3 +24,8 @@ Route::get('/home/detail/{id}','productsController@detail');
 Route::get('/addproduct', "productsController@showCate");
 Route::post('/add-product',"productsController@addProduct");
 Route::get('/show/products','productsController@showProducts');
+Route::delete('/delete/product/{id}','productsController@deleteProduct');
+Route::get('/product/edit/{id}','productsController@edit');
+Route::post('/product/update/{id}','productsController@update');
+Route::post('/cart/add/{id}','ManageCartController@addToCart');
+Route::get('/show/cart','ManageCartController@showCart');

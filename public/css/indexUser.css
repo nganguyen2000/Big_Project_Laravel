@@ -1,0 +1,77 @@
+.container{
+	width: 100%;
+	
+}
+
+.header{
+	width: 100%;
+	height: 180px;
+	/*background-color: red;*/
+	/*margin-left: 70px;*/
+}
+
+.content{
+	width: 1300px;
+	
+	/*background-color: pink;*/
+	margin-left: 0px;
+}
+
+.footer{
+	margin-top: 5px;
+	width: 100%;
+	height:150px;
+	/*background-color: yellow;*/
+}
+
+.left{
+	width: 25%;
+	background-color: lightgrey;
+	float: left;
+}
+
+.right{
+	width: 75%;
+	height:100%;
+	/*background-color: lightgrey;*/
+	float: left;
+}
+
+.table{
+	width: 1000px;
+}
+.tab {
+  
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+ 
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /*border: 1px solid #ccc;*/
+  border-top: none;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  /*display: block;*/
+}
+}
+
+/* Create an active/current tablink class */
+.tab button:hover {
+  background-color: yellow;
+}
+.add{
+	margin-top: 30px;
+}

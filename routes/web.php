@@ -17,4 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('admin/user',"ManageUserController@index");
+route::get('/user',"ManageUserController@index")->name('admin.user.index');
+Route::delete('/user/delete/{id}',"ManageUserController@delete");
+route::get('/user/create',"ManageUserController@create");
+Route::post('user/create',"ManageUserController@store");
+
+Route::delete('/product/delete/{id}',"ManageProductController@delete");
+route::delete('/category/delete/{id}',"ManageCategoryController@delete");
+route::get('/category/edit/{id}',"ManageCategoryController@edit");
+Route::patch('/category/edit/{id}',"ManageCategoryController@update");
+route::get('/category/create',"ManageCategoryController@create");
+route::post('category/create',"ManageCategoryController@store");

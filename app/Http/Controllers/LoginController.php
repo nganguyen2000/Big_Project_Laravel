@@ -32,6 +32,7 @@ class LoginController extends Controller
         }   
     }
     
+    
     function getProfile(){
         $token = request()->header("Authorization");
         $key ="nga12345"; 
@@ -41,4 +42,5 @@ class LoginController extends Controller
         $responData = array("user"=>$user);
         return response()->json($responData, 200);
     }
+
 }
